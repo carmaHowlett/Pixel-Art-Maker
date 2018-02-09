@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Pixels</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+
+
+  </head>
+   <body>
+      <div class="title">
+         <h1>PIXEL ART</h1>
+      </div>
+
+      <div class="table_container">
+        <i class="material-icons" id="open">settings</i>
+        <i class="material-icons" id="refresh">refresh</i>
+        <div class="settings" id="settings">
+          <i class="material-icons" id="close">clear</i>
+          <h2>SETTINGS</h2>
+          <div class="input_container">
+            Height:
+            <input type="number" id="input_height" name="height" min="7" value="16" max="30">
+          </div>
+          <div class="input_container">
+            Width:
+            <input type="number" id="input_width" name="width" min="7" value="16" max="30">
+          </div>
+          <div class="input_container">
+            Color:
+            <input type="color" id="colorPicker">
+          </div>
+          <input type="submit" id="submit" value="Save"><br>
+        </div>
+        <!-- Rendering Grid -->
+        <table id="pixel_canvas"></table>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+      <script src="designs.js"></script>
+
+
+   </body>
+</html>
